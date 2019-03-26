@@ -1,2 +1,2 @@
 # A-script-per-week-Python-
-Traing
+# It's a schedule training for my coding #
