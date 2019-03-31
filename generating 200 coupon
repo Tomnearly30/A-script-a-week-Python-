@@ -1,0 +1,23 @@
+### Generating 200 coupon for shops ###
+
+import string
+import random
+
+
+
+
+### you can change the digits for you coupon ### we use 10 digits ###
+### coupon is case sensitive ###
+
+def coupongenerating(a):
+    database = string.ascii_uppercase + string.ascii_lowercase + string.digits
+    return database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]+ database[random.randint(0,len(database)-1)]
+
+
+###Main###
+
+for i in range(0,200):
+    print(coupongenerating(i))
+
+
+
