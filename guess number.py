@@ -50,4 +50,4 @@ f = int(input("第5次猜测:"))
 if a == f:
     print("你终于猜对了！"),sys.exit()
 else:
-  print("我猜的是", a), print("胜败乃兵家常事，大侠请重新来过！")
+  print("我选的是", a), print("胜败乃兵家常事，大侠请重新来过！")
