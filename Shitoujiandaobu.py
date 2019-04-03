@@ -27,14 +27,11 @@ def fight(x,y):
 ###main###
 
 a = random.randint(-1,1)
-
 b = int(input("你准备出石头（1)剪刀（0）布（-1):"))
-
-
 c = ["平局！","你输了！","你赢了！"]
-dict = {1:"石头",0:"剪刀",-1:"布"}
-print("电脑出的是",dict.get(a))
-print("你出的是",dict.get(b))
-print(c[fight(a,b)])
+dict = {1:"石头",0:"剪刀",-1:"布"} 
+if b not in range(-1,2):
+    print("请按规矩来，少年")
+else print("电脑出的是",dict.get(a)), print("你出的是",dict.get(b)), print(c[fight(a,b)])
 
 
