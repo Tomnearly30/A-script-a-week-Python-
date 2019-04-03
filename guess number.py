@@ -14,6 +14,8 @@ b = int(input("我在1到100之间选择了一个数，你有5次机会，猜猜
 
 if a == b:
     print("哇塞，第一次就猜对了！"),sys.exit()
+elif b not in range(1,101):
+    print("输入错误，请重新输入，还有4次机会")
 elif a > b:
   print("比我选的数小了，还有4次机会，再猜")
 else:
@@ -23,6 +25,8 @@ c = int(input("第2次猜测:"))
 
 if a == c:
     print("这次你猜对了！"),sys.exit()
+elif c not in range(1,101):
+    print("输入错误，请重新输入，还有3次机会")
 elif a > c:
   print("比我选的数小了，还有3次机会，再猜")
 else:
@@ -31,6 +35,8 @@ else:
 d = int(input("第3次猜测:"))
 if a == d:
     print("这次你猜对了！"),sys.exit()
+elif d not in range(1,101):
+    print("输入错误，请重新输入，还有2次机会")
 elif a > d:
   print("比我选的数小了，还有2次机会，再猜")
 else:
@@ -40,6 +46,8 @@ e = int(input("第4次猜测:"))
 
 if a == e:
     print("这次你猜对了！"),sys.exit()
+elif e not in range(1,101):
+    print("输入错误，请重新输入，还有最后1次机会")
 elif a > e:
   print("比我选的数小了，还有最后1次机会，再猜")
 else:
@@ -49,5 +57,7 @@ f = int(input("第5次猜测:"))
 
 if a == f:
     print("你终于猜对了！"),sys.exit()
+elif f not in range(1,101):
+    print("输入错误，游戏结束")
 else:
   print("我选的是", a), print("胜败乃兵家常事，大侠请重新来过！")
